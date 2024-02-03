@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
             easing: "easeOutCirc"
         });
 
-        ["mouseover"].forEach(function (el) {
+        ["mouseover","click"].forEach(function (el) {
         no.addEventListener(el, function (event) {
             const top = getRandomNumber(window.innerHeight - this.offsetHeight);
             const left = getRandomNumber(window.innerWidth - this.offsetWidth);
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const getRandomNumber = (num) => {
     return Math.floor(Math.random() * (num + 1));
     };
-    no.addEventListener("mouseover", function() {
+    no.addEventListener(("mouseover","click"), function() {
         // const test = document.getElementById("test");
         height+=10
         width+=20
