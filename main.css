@@ -1,0 +1,9 @@
+button {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border: none;
+    cursor: pointer;
+  }
+body{
+    background-color: rgb(246, 211, 217);
+}
